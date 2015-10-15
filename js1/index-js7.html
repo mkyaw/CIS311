@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS Exercises | Part Seven: Boolean</title>
+</head>
+<body>
+    <h1>JavaScript Expression Example</h1>
+    
+    <p>Expressions concatenation:</p>
+
+    <p id="demo"></p>
+    <p id="demobool"></p>
+    
+    <script>
+        document.getElementById("demo").innerHTML = Boolean (10 > 9);
+
+        // x = (1 === "1"); // false
+        // x = (1 == "1"); //true
+        // x = (0 == ""); //true
+        x = (0 === "1"); //false
+
+        
+        document.getElementById("demobool").innerHTML = x;
+    </script>
+</body>
+</html>
