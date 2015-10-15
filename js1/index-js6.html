@@ -10,11 +10,17 @@
     <p>Expressions concatenation:</p>
 
     <p id="demo"></p>
+    <p id="datedemo"></p>
     
     <script>
         var x = "John";
         var y = "Doe";
-        document.getElementById("demo").innerHTML = x + y;
+        document.getElementById("demo").innerHTML = x + " " + y;
+    </script>
+
+    <script>
+        var d = new Date("October 13, 2015 8:15:00");
+        document.getElementById("datedemo").innerHTML = "Date: " +d;
     </script>
 </body>
 </html>
