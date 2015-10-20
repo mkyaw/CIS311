@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Exercises | Part 12: Access Objects in JS</title>
+</head>
+<body>
+    <h2>Create a basic object in JS</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        var person = {
+            firstName : "John",
+            lastName : "Doe",
+            age : 50,
+            eyeColor : "blue"
+        };
+
+        document.getElementById("demo").innerHTML = person["firstName"] + " is " + 
+        person["age"] + " years old.";
+    </script>
+</body>
+</html>
