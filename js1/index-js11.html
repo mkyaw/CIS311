@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Exercises | Part 11: Beginning OOP in JS</title>
+</head>
+<body>
+    <h2>Create a basic object in JS</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        var myFather = new person("John", "Doe", 50, "blue");
+
+        var myMother = new person("Jane", "Doe", 45, "green");
+
+        document.getElementById("demo").innerHTML = 
+        "My father is " + myFather.age + ". My mother is " + myMother.age + ".";
+    </script>
+</body>
+</html>
