@@ -11,11 +11,16 @@
 
     <p id="demo"></p>
 
+    <p id="demo2"></p>
+
     <script>
         function myFunction() {
             var d = new Date().getDay();
+            var d2 = new Date().getDay();
             //var n = d.getDay();
-            document.getElementById("demo").innerHTML = "Day of the week as the number is: " + d;
+            document.getElementById("demo").innerHTML = "<strong>Day of the week as the number is: " + d + "</strong>";
+
+            document.getElementById("demo2").innerText = "<strong>Day of the week as the number is: " + d2 + "</strong>";
         }
     </script>
 </body>
