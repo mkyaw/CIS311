@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery 101 - 2</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#test").hide();
+            });
+        });
+
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".test").hide();
+            });
+        });
+    </script>
+</head>
+
+<!-- jquery can...
+ 1. reference multiple items, with one line of code
+ 2. efficiently control the behavior of many items, given its class or id
+ 3. thus, exert control over the overall page, however complex
+ -->
+ 
+<body>
+    
+    <h2>This is my heading.</h2>
+    
+    <p>This is my paragraph 1.</p>
+    
+    <p id="test">This is another paragraph.</p>
+
+    <p class="test">This is third paragraph.</p>
+    
+    <button>Click me! Make something disappear</button>
+</body>
+</html>
