@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Exercises | Part 19: Initializing an Object's Attribute with Function</title>
+</head>
+<body>
+    <h2>Initializing an Object's Attribute with Function</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        // initialize an object with a set of arguments
+        function person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            this.changeName = function(name) {
+                this.lastName = name;
+            }
+        }
+
+        var myFather = new person("John", "Doe", 60, "green");
+        var myMother = new person("Jane", "Doe", 50, "blue");
+
+        // initialization - use a function to initialize an object's attribute
+        myFather.name = function() {
+            return this.firstName + " " + this.lastName;
+        };
+
+        document.getElementById("demo").innerHTML = "My father is: " 
+        + myFather.name();
+    </script>
+</body>
+</html>
