@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Exercises | Part 21: JSON 101 - 2</title>
+</head>
+<body>
+    <h2>JSON 101 - Designing Data Transfer Using JS - 2</h2>
+    <h3>Create an object from JSON strings</h3>
+
+    <p id="demo"></p>
+
+    <!-- JSON:
+    1. KEY/VALUE PAIR, ENCODED
+    2. DOUBLE QUOTES: HELP CREATE STRINGS
+    3. DOUBLE QUOTES PACKAGE PAYLOAD CONTENT
+    4. DATA ARRIVES WITHIN THE DOUBLE QUOTES
+    5. HELPS YOU TO TOKENIZE VALUE KEYS
+    -->
+
+    <script>
+        var text = '{"employees":[' +
+        '{"firstName":"John","lastName":"Doe" },' +
+        '{"firstName":"Anna","lastName":"Smith" },' +
+        '{"firstName":"Peter","lastName":"Jones" }]}';
+
+        // our JSON payload
+        obj = JSON.parse(text);
+
+        document.getElementById("demo").innerHTML = obj.employees[1].firstName
+                                                    + " " + obj.employees[1].lastName;
+
+        var obj2 = { 'students' : [
+                                {'name' : 'myo', 'age' : 25}, 
+                                {'name' : 'mike', 'age' : 30}]};
+
+        document.write("<p> Your name is: " + obj2.students[1].name +"</p>");
+
+    </script>
+</body>
+</html>
