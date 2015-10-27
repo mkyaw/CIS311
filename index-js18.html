@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Exercises | Part 18: JS Prototypes 2</title>
+</head>
+<body>
+    <h2>Working with JavaScript Prototypes 2</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            this.changeName = function(name) {
+                this.lastName = name;
+            }
+        }
+
+        var myFather = new person("John", "Doe", 60, "green");
+        var myMother = new person("Jane", "Doe", 50, "blue");
+
+        document.getElementById("demo").innerHTML = "My father's age is: " 
+        + myFather.age + " and my mother's age is: " + myMother.age;
+    </script>
+</body>
+</html>
