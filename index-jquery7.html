@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery 101 - 7</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                alert($("#test").attr("href"));
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>Form handling 2</h2>
+
+    <p>
+        <a href="http://www.cpp.edu" target="_blank" id="test">Hello CPP!</a>
+    </p>
+
+    <button>Show me the link!</button>
+    
+</body>
+</html>
