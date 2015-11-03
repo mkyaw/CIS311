@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery 101 - 3</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $("#p1").hover(function() {
+                alert("You have hovered over p1");
+            }, function() {
+                 alert("Bye, now leaving p1");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="p1">THIS IS OUR P1 PARAGRAPH </p>
+</body>
+</html>
