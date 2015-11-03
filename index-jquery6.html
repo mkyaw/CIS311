@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery 101 - 6</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script>
+        // RPC: remote procedure call
+        // grab content from an HTML form element using a variable
+        $(document).ready(function() {
+            $("button").click(function(){
+                alert("Value: " + $("#test").val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>Form handling</h2>
+
+    <p>
+        Name: <input type="text" id="test" value="Capt America">
+    </p>
+
+    <button>Show me Captain!</button>
+    
+</body>
+</html>
